@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Profil</title>
+    <link rel="stylesheet" href="Ubah Profil.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="menu">
+                <a href="">Beranda</a>
+                <a href="">Mulai Menanam</a>
+                <a href="">Lapak</a>
+                <a href="">Status</a>
+                <a href=""> <img src="profil ikon.png" width="35px" alt="Menu Profil"> </a>
+            </div>
+            <div><a href=""> <img src="Logo web.png" width="120px" alt="Logo"> </a></div>
+        </div>
+    </nav>
+    <section class="container">Ubah Profil</section>
+    <form action="Profil.html" method="POST" enctype="multipart/form-data">
+        <div class="main">
+            <div id="foto">
+                <img src="foto ubah.png" width="150px" alt="Foto profil">
+            </div>
+            <div id="button">
+                <div id="save">
+                    <input id="save_button" type="submit" name="simpan" value="Simpan">
+                </div>
+                <div>
+                    <input id="upload_button" type="file" name="foto" accept="image/*">
+                </div>
+            </div>
+            <div id="question">
+                <div> E-mail</div>
+                <div>Nama Lengkap</div>
+                <div>Alamat</div>
+                <div>Nomor HP</div>
+                <div>Jenis Kartu Identitas</div>
+                <div>Nomor Kartu Identitas</div>
+                <div>Password Lama</div>
+                <div>Password Baru</div>
+            </div>
+            <div id="answer">
+                <div>
+                    <input type="email" name="email" placeholder="Masukkan email..." required>
+                </div>
+                <div>
+                    <input type="text" name="nama" placeholder="Masukkan nama lengkap..." required> 
+                </div>
+                <div>
+                    <input type="text" name="alamat" placeholder="Masukkan alamat..." required> 
+                </div>
+                <div>
+                    <input type="number" min="0" maxlength="14" name="nohp" placeholder="Masukkan nomor HP..." required> 
+                </div>
+                <div>
+                    <select name="jenisid">
+                        <option value="ktp"> KTP </option>
+                        <option value="sim"> SIM </option>
+                    </select>
+                </div>
+                <div>
+                    <input type="number" min="0" name="noid" placeholder="Masukkan nomor identitas..." required> 
+                </div>
+                <div>
+                    <input type="password" minlength="6" maxlength="12" name="old_password" placeholder="Masukkan password lama..."> 
+                </div>
+                <div>
+                    <input type="password" minlength="6" maxlength="12" name="new_password" placeholder="min 6 ~ maks 12"> 
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
