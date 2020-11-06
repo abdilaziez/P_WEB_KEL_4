@@ -73,7 +73,7 @@ div.main {
     margin-right: auto;
     flex-wrap: wrap;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.089);
-    padding: 30px;
+    padding: 30px 40px;
 }
 
 div.main > #foto {
@@ -82,7 +82,6 @@ div.main > #foto {
 }
 
 div.main > #button {
-    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -96,14 +95,14 @@ div.main #save {
 
 div.main #save_button {
     background: #1CE11C;
-            border: none;
-            outline: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 13px;
-            font-weight: bold;
-            width: 70px;
-            height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    width: 70px;
+    height: 25px;
 }
 
 div.main #save_button:hover {
@@ -115,30 +114,28 @@ div.main #upload_button {
     outline: none;
 }
 
-div.main > #question {
-    width: 245px;
+div.main > div#question {
+    width: 50%;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 40px 0px 5px 5px;
-
+    padding: 40px 0px 5px 0px;
 }
 
 div.main > div#answer {
-    width: 245px;
-    height: 300px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 40px 5px 5px 0px;
+    padding: 40px 0px 5px 0px;
 }
 
 div.main > div#answer input {
     border: none;
     outline: none;
     background-color: whitesmoke;
-    width: 225px;
+    width: 230px;
     padding: 9px 10px;
 }
 
@@ -146,7 +143,7 @@ div.main > div#answer select {
     border: none;
     outline: none;
     background-color: whitesmoke;
-    width: 245px;
+    width: 250px;
     padding: 10px;
     cursor: pointer;
 }
