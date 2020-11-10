@@ -5,9 +5,9 @@ merah : #F61B1B
 biru muda : #00FFFF
 
 menu Status pesanan
-hijau gelap :
-hijau agak gelap :
-hijau muda :
+hijau gelap : #029D03
+hijau agak gelap : #04C105
+hijau muda : #1CE11C
 
 menu Lapak
 hijau beli : #54FC54
