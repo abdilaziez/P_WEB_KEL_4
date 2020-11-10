@@ -1,0 +1,17 @@
+KODE WARNA
+hijau logo : #1CE11C
+abu : whitesmoke
+merah : #F61B1B
+biru muda : #00FFFF
+
+menu Status pesanan
+hijau gelap :
+hijau agak gelap :
+hijau muda :
+
+KETERANGAN PRODUK
+- kangkung.png = Benih Bibit Kangkung Bangkok LP1, harga: Rp 18000
+- jagung.png = Benih Jagung Manis Unggul Baruna (Garuda Seed) - isi 50 gr, harga: Rp 13000
+- gathul.png = Gathul Biasa Alat Tani, harga: Rp 25000
+- paket_pupuk.png = Paket Pertanian Pupuk Organik Nasa, harga: Rp208000
+- pupuk.png = Pupuk fermentasi EM4, harga: Rp35000
