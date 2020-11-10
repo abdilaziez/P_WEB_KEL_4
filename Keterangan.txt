@@ -9,6 +9,9 @@ hijau gelap :
 hijau agak gelap :
 hijau muda :
 
+menu Lapak
+hijau beli : #54FC54
+
 KETERANGAN PRODUK
 - kangkung.png = Benih Bibit Kangkung Bangkok LP1, harga: Rp 18000
 - jagung.png = Benih Jagung Manis Unggul Baruna (Garuda Seed) - isi 50 gr, harga: Rp 13000
