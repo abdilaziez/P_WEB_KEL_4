@@ -44,7 +44,11 @@ nav.navbar div.menu {
     padding-left: 30px;
 }
 
-nav.navbar a:not(:last-child):hover {
+nav.navbar a {
+    color: black;
+}
+
+nav.navbar a:hover {
     color: #1CE11C;
 }
 
