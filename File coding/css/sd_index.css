@@ -69,7 +69,6 @@ div.header {
 }
 
 div.header > div.container {
-    background-color: #1ce11c00;
     color: white;
     padding: 40px 0px;
 }
@@ -113,10 +112,17 @@ div.header a#mulai_menanam {
 /* header */
 
 /* konten 1 */
-div > div.container {
-    display: flex;
+
+div.main {
     background-color: whitesmoke;
-    height: 300px;
 }
 
+div.main > div.container {
+    display: flex;
+    height: auto;
+}
+
+div.main div.container {
+
+}
 /* konten 1*/
