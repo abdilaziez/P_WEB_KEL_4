@@ -3,6 +3,7 @@ hijau logo : #1CE11C
 abu : whitesmoke
 merah : #F61B1B
 biru muda : #00FFFF
+abu-abu tulisan : #7a7a7a
 
 menu Status pesanan
 hijau gelap : #029D03

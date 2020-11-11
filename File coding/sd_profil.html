@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubah Profil</title>
-    <link rel="stylesheet" href="css/sd_ubah_profil.css">
+    <title>Profil</title>
+    <link rel="stylesheet" href="css/sd_profil.css">
 </head>
 <body>
     <!-- navigasi menu -->
@@ -23,59 +23,54 @@
     <!-- navigasi menu -->
 
     <!-- konten -->
-    <section class="container">Ubah Profil</section>
+    <section class="container">Detail Profil</section>
     <form action="Profil.html" method="POST" enctype="multipart/form-data">
         <div class="main">
-            
             <div id="foto">
                 <img src="image/ikon/foto_ubah.png" width="150px" alt="Foto profil">
             </div>
             <div id="button">
-                <div id="save">
-                    <input id="save_button" type="submit" name="simpan" value="Simpan">
+                <div id="edit">
+                    <a id="edit_button" href="sd_ubah_profil.html"> Ubah </a>
                 </div>
                 <div>
-                    <input id="upload_button" type="file" name="foto" accept="image/*">
+                    <a id="logout_button" href="index.html"> <img src="image/ikon/keluar.png">&nbsp; KELUAR </a>
                 </div>
             </div>
+
+            <section id="email">
+                <div>tanimaju@gmail.com</div>
+            </section>
+            <!-- pertanyaan -->
+
             <div id="question">
                 <div>Nama Lengkap</div>
                 <div>Alamat</div>
                 <div>Nomor HP</div>
                 <div>Jenis Kartu Identitas</div>
                 <div>Nomor Kartu Identitas</div>
-                <div>Password Lama</div>
-                <div>Password Baru</div>
             </div>
+
+            <!-- jawaban -->
             <div id="answer">
                 <div>
-                    <input type="text" name="nama" placeholder="Masukkan nama lengkap..." required> 
+                    Tani Maju Site
+                </div>
+                <div class="overflow">
+                    Jl. Kenangan Lama No.8-2, Jember
                 </div>
                 <div>
-                    <input type="text" name="alamat" placeholder="Masukkan alamat..." required> 
+                    081234567890
                 </div>
                 <div>
-                    <input type="number" min="0" maxlength="14" name="nohp" placeholder="Masukkan nomor HP..." required> 
+                    KTP
                 </div>
                 <div>
-                    <select name="jenisid">
-                        <option value="ktp"> KTP </option>
-                        <option value="sim"> SIM </option>
-                    </select>
-                </div>
-                <div>
-                    <input type="number" min="0" name="noid" placeholder="Masukkan nomor identitas..." required> 
-                </div>
-                <div>
-                    <input type="password" minlength="6" maxlength="12" name="old_password" placeholder="Masukkan password lama..."> 
-                </div>
-                <div>
-                    <input type="password" minlength="6" maxlength="12" name="new_password" placeholder="min 6 ~ maks 12"> 
+                    021234567890
                 </div>
             </div>
         </div>
     </form>
     <!-- konten -->
-
 </body>
 </html>

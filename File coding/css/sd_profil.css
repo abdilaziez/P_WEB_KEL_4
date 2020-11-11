@@ -10,12 +10,16 @@ a {
     text-decoration: none;
 }
 
-/* navigasi menu */
-
 .container {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* navigasi menu */
+
+#this_menu {
+    color: #1CE11C;
 }
 
 nav.navbar {
@@ -48,6 +52,14 @@ nav.navbar a:hover {
     color: #1CE11C;
 }
 
+nav.navbar #profil {
+    filter: brightness(0);
+}
+
+nav.navbar #profil:hover {
+    filter: none;
+}
+
 /* navigasi menu */
 
 /* konten */
@@ -63,12 +75,12 @@ section.container {
 
 div.main {
     display: flex;
-    max-width: 500px;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.089);
-    padding: 30px 40px;
+    padding: 30px;
 }
 
 div.main > #foto {
@@ -78,67 +90,78 @@ div.main > #foto {
 
 div.main > #button {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
 }
 
-div.main #save {
-    height: 60%;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 10px;
-}
-
-div.main #save_button {
-    background: #1CE11C;
-    border: none;
-    outline: none;
+div.main #edit_button {
+    background-color: #1CE11C;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: bold;
-    width: 70px;
-    height: 25px;
+    color: black;
+    font-weight: 600;
+    padding: 5px 20px;
 }
 
-div.main #save_button:hover {
+div.main #edit_button:hover {
     box-shadow: 0px 0px 10px #1CE11C;
 }
 
-div.main #upload_button {
-    width: 180px;
-    outline: none;
+div.main #logout_button {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+    background-color: #F61B1B;
+    padding: 5px 10px;
+}
+
+div.main #logout_button img {
+    width: 20px;
+}
+
+div.main #logout_button:hover {
+    box-shadow: 0px 0px 10px #F61B1B;
+}
+
+section#email {
+    width: 100%;
+    height: fit-content;
+}
+
+section#email div {
+    width: 50%;
+    text-align: center;
+    font-size: 13px;
 }
 
 div.main > div#question {
     width: 50%;
-    height: 300px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 40px 0px 5px 0px;
+    padding-top: 20px;
 }
 
 div.main > div#answer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 40px 0px 5px 0px;
+    padding-top: 20px;
 }
 
-div.main > div#answer input {
-    border: none;
-    outline: none;
+div.main > div#answer div {
     background-color: whitesmoke;
-    width: 230px;
-    padding: 9px 10px;
+    color: #7a7a7a;
+    font-size: 15px;
+    width: 205px;
+    padding: 8px 10px;
 }
 
-div.main > div#answer select {
-    border: none;
-    outline: none;
-    background-color: whitesmoke;
-    width: 250px;
-    padding: 10px;
-    cursor: pointer;
+div.main >div#answer div.overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /* konten */
