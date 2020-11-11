@@ -10,6 +10,8 @@ a {
     text-decoration: none;
 }
 
+/* navigasi menu */
+
 #this_menu {
     color: #1CE11C;
 }
@@ -61,6 +63,10 @@ nav.navbar a#daftar_button:hover {
     box-shadow: 0px 0px 0px 2px #1CE11C;
 }
 
+/* navigasi menu */
+
+/* konten */
+
 div.main {
     background-color: white;
 }
@@ -103,3 +109,5 @@ div.main a#mulai_menanam {
      background-color: #00ecec;
      color: rgb(240, 240, 240);
  }
+
+ /* konten */

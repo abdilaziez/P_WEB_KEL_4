@@ -10,6 +10,8 @@ a {
     text-decoration: none;
 }
 
+/* navigasi menu */
+
 .container {
     max-width: 1300px;
     margin-left: auto;
@@ -45,6 +47,10 @@ nav.navbar a {
 nav.navbar a:hover {
     color: #1CE11C;
 }
+
+/* navigasi menu */
+
+/* konten */
 
 section.container {
     max-width: 140px;
@@ -151,3 +157,5 @@ div.container td {
     padding: 5px;
     text-align: center;
 }
+
+/* konten */
