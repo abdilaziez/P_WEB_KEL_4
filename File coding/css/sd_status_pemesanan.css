@@ -77,7 +77,7 @@ body > div.container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 500px;
+    height: 600px;
     margin-top: 20px;
 }
 
@@ -88,13 +88,12 @@ div.status_header {
     padding: 1px 10px;
 }
 
-div.status {
+div.status_beli, div.status_jual {
     display: flex;
     justify-content: space-between;
-    background-color: #1CE11C;
 }
 
-div.status a {
+button {
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -102,18 +101,35 @@ div.status a {
     font-size: 20px;
     align-items: center;
     color: black;
-    /* border: 1px solid black; */
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #1CE11C;
 }
-div.status a:nth-child(1) {
+
+div.status_beli button:focus {
     background-color: #04C105;
 }
 
-div.status a:hover {
+div.status_jual button:focus {
     background-color: #04C105;
 }
 
-div.status img {
+button:hover {
+    background-color: #04C105;
+}
+
+div > .img1 {
     width: 40px;
+}
+div > .img2 {
+    width: 43px;
+}
+div > .img3 {
+    width: 63px;
+}
+div > .img4 {
+    width: 63px;
 }
 
 div.pesanan {
