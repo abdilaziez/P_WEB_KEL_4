@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* navigasi menu */
+
+#this_menu {
+    color: #1CE11C;
+}
+
+nav.navbar {
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+nav.navbar > div.container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+nav.navbar div.menu {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+nav.navbar a {
+    color: black;
+}
+
+nav.navbar a:hover {
+    color: #1CE11C;
+}
+
+nav.navbar #profil {
+    filter: brightness(0);
+}
+
+nav.navbar #profil:hover {
+    filter: none;
+}
+
+/* navigasi menu */
+
+/* konten */
+
+div#header {
+    background-color: #1CE11C;
+}
+
+div#header > div.container {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+body > div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    margin-top: 20px;
+}
+
+div.status_header {
+    background-color: #029D03;
+    color: white;
+    font-size: 25px;
+    padding: 1px 10px;
+}
+
+div.status {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1CE11C;
+}
+
+div.status a {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 10px;
+    font-size: 20px;
+    align-items: center;
+    color: black;
+    /* border: 1px solid black; */
+}
+div.status a:nth-child(1) {
+    background-color: #04C105;
+}
+
+div.status a:hover {
+    background-color: #04C105;
+}
+
+div.status img {
+    width: 40px;
+}
+
+div.pesanan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 150px;
+    background-color: whitesmoke;
+}
+/* konten */

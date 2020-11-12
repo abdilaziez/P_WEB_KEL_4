@@ -52,14 +52,6 @@ nav.navbar a:hover {
     color: #1CE11C;
 }
 
-nav.navbar #profil {
-    filter: brightness(0);
-}
-
-nav.navbar #profil:hover {
-    filter: none;
-}
-
 /* navigasi menu */
 
 /* konten */
