@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav.navbar{
+    background-color: white;
+}
+
+nav.navbar .navigation a:not(:last-child){
+    margin-right: 25px;
+    text-decoration: none;
+    border: 1px solid transparent;
+
+}
+
+.navigation a.active{
+    color: greenyellow;
+}
+
+nav.navbar .navigation a:not(.profil):not(.active):hover{
+    background-color: greenyellow;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+}
+
+.logo a img{
+    width: 100px;
+}
+
+nav.navbar > div.container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.button{
+    text-decoration: none;
+    color: black;
+    border:1px solid greenyellow;
+    padding: 10px 10px;
+    border-radius: 7px;
+    background-color: greenyellow;
+}
+
+h2.atas{
+    text-align: center;
+}
+
+.awal{
+    display: flex;
+    align-items: center;
+}
+
+.responsive{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    border: 1px solid cyan;
+    border-radius: 10%;
+    background-color: cyan;
+    padding: 5px;
+}
+
+.cara{
+    padding: 10px;
+}
