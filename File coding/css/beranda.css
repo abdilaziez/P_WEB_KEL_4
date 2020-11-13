@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav.navbar{
+    background-color: white;
+}
+
+nav.navbar .navigation a:not(:last-child){
+    margin-right: 25px;
+    text-decoration: none;
+    border: 1px solid transparent;
+
+}
+
+.navigation a.active{
+    color: greenyellow;
+}
+
+nav.navbar .navigation a:not(.profil):not(.active):hover{
+    background-color: greenyellow;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+}
+
+.logo a img{
+    width: 100px;
+}
+
+nav.navbar > div.container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.button{
+    text-decoration: none;
+    color: black;
+    border:1px solid greenyellow;
+    padding: 10px 10px;
+    border-radius: 7px;
+    background-color: greenyellow;
+}
+
+section.background{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to right, rgb(69, 240, 17) 20%,rgba(189, 105, 105, 0) 100%), url('../beranda.png') no-repeat;
+    background-size: 100%;
+}
+
+p.atas{
+    font-size: 30px;
+    color: white;
+    margin: 0px;
+}
+
+p.bawah{
+    font-size: 15px;
+    color: white;
+}
+
+.dalam{
+    margin-left: 5%;
+    width: 50%;
+
+}
+
+span.kuning{
+    color: yellow;
+}
+
+section.bg_bawah{
+    width: 100%;
+    /* height: 220px; */
+    background-color: rgba(128, 128, 128, 0.082);
+    display: flex;
+    flex-direction: row;
+    padding-top: 33px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.button_1{
+    margin-left: 5%;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: cyan;
+    border-color:cyan;
+    color: rgba(255, 255, 255, 0.911);
+    font-weight: 800;
+}
+
+.jarak{
+    margin-top: 50px;
+}
+
+.kenalan{
+    width: 20%;
+    background-repeat: none;
+    margin-left: 5%;
+}
+
+.tulisan_bawah{
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
