@@ -57,7 +57,7 @@ a.button{
 section.background{
     width: 100%;
     height: 350px;
-    background: linear-gradient(to right, rgb(69, 240, 17) 20%,rgba(189, 105, 105, 0) 100%), url('../beranda.png') no-repeat;
+    background: linear-gradient(to right, rgb(69, 240, 17) 20%,rgba(189, 105, 105, 0) 100%), url('../image/beranda.png') no-repeat;
     background-size: 100%;
 }
 
