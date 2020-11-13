@@ -1,3 +1,5 @@
+font : Open Sans
+
 KODE WARNA
 hijau logo : #1CE11C
 abu : whitesmoke
