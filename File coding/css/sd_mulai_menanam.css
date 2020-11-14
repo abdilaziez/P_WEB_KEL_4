@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    font-family: "Open Sans", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+body{
+    margin: 0px;
+}
+.container{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* navigasi menu */
+
+#this_menu {
+    color: #1CE11C;
+}
+
+nav.navbar {
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+nav.navbar > div.container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+nav.navbar div.menu {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+nav.navbar a {
+    color: black;
+}
+
+nav.navbar a:hover {
+    color: #1CE11C;
+}
+
+nav.navbar #profil {
+    filter: brightness(0);
+}
+
+nav.navbar #profil:hover {
+    filter: none;
+}
+
+/* navigasi menu */
+
+section.background{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to right, rgb(69, 240, 17) 20%,rgba(189, 105, 105, 0) 100%), url(../image/mulai_menanam.png) no-repeat;
+    padding-top: 5%;
+    background-size: cover;
+}
+
+p.atas{
+    font-size: 30px;
+    color: white;
+    margin: 0px;
+}
+
+p.bawah{
+    font-size: 15px;
+    color: white;
+}
+
+.dalam{
+    margin-left: 5%;
+    width: 50%;
+
+}
+
+.button_1{
+    margin-left: 5%;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: cyan;
+    border-color:cyan;
+    color: rgba(255, 255, 255, 0.911);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.jarak{
+    margin-top: 50px;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer #contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    height: 250px;
+    border-bottom: 1px solid white;
+}
+
+div#contact #address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 40px;
+}
+
+div#address > #street {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+div#address span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+div#address > #phone {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+div#contact #social_media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 0px 40px;
+    border-left: 3px solid white;
+}
+
+div#social_media #social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+div#social_media div a {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+div#social_media a img {
+    width: 35px;
+    margin-right: 20px;
+}
+
+div#social_media div > img {
+    width: 150px;
+}
+
+footer #copy {
+    text-align: center;
+    padding: 10px 0px;
+    border-top: 1px solid white;
+}
+/* footer */
