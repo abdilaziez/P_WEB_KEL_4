@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* navigasi menu */
+
+#this_menu {
+    color: #1CE11C;
+}
+
+nav {
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+nav > div.container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+nav div.menu {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+nav a {
+    color: black;
+}
+
+nav a:hover {
+    color: #1CE11C;
+}
+
+nav a#daftar_button {
+    background-color: #1CE11C;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+nav a#daftar_button:hover {
+    background-color: transparent;
+    color: #1CE11C;
+    box-shadow: 0px 0px 0px 2px #1CE11C;
+}
+
+/* navigasi menu */
+
+/* konten */
+div.title {
+    background-color: silver;
+}
+
+div.title > div.container {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+/* konten 1 */
+
+div.input {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+div.input #question {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin-right: 50px;
+}
+
+div#question div {
+    font-size: 20px;
+}
+
+div.input #answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div#answer input {
+    border: none;
+    outline: none;
+    width: 160px;
+    padding: 5px 10px;
+    margin-left: 30px;
+    background-color: whitesmoke;
+}
+
+div#answer select {
+    border: none;
+    outline: none;
+    width: 180px;
+    cursor: pointer;
+    padding: 4px 8px;
+    margin-left: 30px;
+    background-color: whitesmoke;
+}
+
+div#analyze {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+input#button {
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 30px;
+    margin-right: 50px;
+    background-color: #1CE11C;
+}
+
+/* konten 2 */
+
+div.konten2 {
+    display: flex;
+    border: 1px solid black;
+    margin: 20px 0px;
+    background-color: thistle;
+}
+
+/* konten */
