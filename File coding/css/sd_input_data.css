@@ -151,6 +151,7 @@ div.konten2 {
     border: 1px solid black;
     padding: 10px 0px;
     margin: 20px auto;
+    box-shadow: 8px 8px 15px gray;
 }
 
 div#title_hasil {
