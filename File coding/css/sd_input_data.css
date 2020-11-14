@@ -27,7 +27,7 @@ a {
     color: #1CE11C;
 }
 
-nav {
+nav.navbar {
     background-color: white;
     position: sticky;
     width: 100%;
@@ -35,13 +35,13 @@ nav {
     top: 0px;
 }
 
-nav > div.container {
+nav.navbar > div.container {
     display: flex;
     padding: 10px;
     justify-content: space-between;
 }
 
-nav div.menu {
+nav.navbar div.menu {
     display: flex;
     width: 500px;
     justify-content: space-between;
@@ -49,27 +49,20 @@ nav div.menu {
     padding-left: 30px;
 }
 
-nav a {
+nav.navbar a {
     color: black;
 }
 
-nav a:hover {
+nav.navbar a:hover {
     color: #1CE11C;
 }
 
-nav a#daftar_button {
-    background-color: #1CE11C;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 50px;
+nav.navbar #profil {
+    filter: brightness(0);
 }
 
-nav a#daftar_button:hover {
-    background-color: transparent;
-    color: #1CE11C;
-    box-shadow: 0px 0px 0px 2px #1CE11C;
+nav.navbar #profil:hover {
+    filter: none;
 }
 
 /* navigasi menu */
