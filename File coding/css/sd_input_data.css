@@ -134,13 +134,17 @@ div#analyze {
 input#button {
     border: none;
     outline: none;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     cursor: pointer;
     border-radius: 10px;
     padding: 5px 30px;
     margin-right: 50px;
     background-color: #1CE11C;
+}
+
+input#button:hover {
+    background-color: #04C105;
 }
 
 /* konten 2 */
@@ -151,7 +155,7 @@ div.konten2 {
     border: 1px solid black;
     padding: 10px 0px;
     margin: 20px auto;
-    box-shadow: 8px 8px 15px gray;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.253);
 }
 
 div#title_hasil {
@@ -189,14 +193,29 @@ div#data {
     margin: 50px 20px;
 }
 
-div#download {
+div.download {
     display: flex;
     justify-content: flex-end;
-    font-size: 20px;
-    margin-right: 60px;
+    /* background-color: cyan; */
 }
 
-div#download a {
+div.download a {
+    display: flex;
+    align-items: center;
+    margin: 5px 70px 20px 0px;
+    background-color: silver;
+    font-size: 15px;
     color: black;
+    border-radius: 8px;
+    padding: 8px 15px;
+}
+
+div.download a:hover {
+    background-color: gray;
+}
+
+div.download img {
+    width: 20px;
+    margin-right: 10px;
 }
 /* konten */
