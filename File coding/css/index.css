@@ -21,12 +21,6 @@ a {
     margin-right: auto;
 }
 
-.container2 {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* navigasi menu */
 
 #this_menu {
@@ -42,7 +36,7 @@ nav {
 
 nav > div.container {
     display: flex;
-    padding: 10px 100px;
+    padding: 10px 40px 10px 10px;
     justify-content: space-between;
 }
 
@@ -51,6 +45,7 @@ nav div.menu {
     width: 500px;
     justify-content: space-between;
     align-items: center;
+    padding-left: 30px;
 }
 
 nav a {
@@ -82,12 +77,13 @@ nav a#daftar_button:hover {
 
 div.header {
     background: linear-gradient(to right, #1ce11c 40%, #00000000), url(../image/beranda.png) right;
+    background-size: cover;
 }
 
-div.header > div.container2 {
+div.header > div.container {
     background-color: #1ce11c00;
     color: white;
-    padding: 40px 70px;
+    padding: 40px 35px;
 }
 
 div.header div#text {
@@ -130,16 +126,16 @@ div#konten1 {
     background-color: whitesmoke;
 }
  
-div#konten1 > div.container2 {
+div#konten1 > div.container {
     display: flex;
     justify-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
-    padding: 70px 100px;
+    padding: 70px 35px;
 }
 
 div#konten1 img {
-    width: 100%;
+    width: 650px;
 }
 
 div#konten1 .teks {
@@ -157,11 +153,11 @@ div#konten1 #title1 {
 /* konten 1*/
 
 /* konten 2*/
-div#konten2 > div.container2 {
+div#konten2 > div.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 100px;
+    padding: 70px 15px;
 }
 
 div#konten2 #title2 {
@@ -182,7 +178,7 @@ div#how_to > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 25px;
+    margin: 0px 20px;
 }
 
 div#konten2 .number {
@@ -202,7 +198,7 @@ div#konten2 .number {
 
 div#konten2 div.content {
     text-align: center;
-    width: 250px;
+    max-width: 250px;
 }
 
 /* konten 2*/
@@ -214,10 +210,9 @@ footer {
     color: white;
 }
 
-footer .container2{
+footer .container{
     display: flex;
     flex-direction: column;
-    padding: 0px 70px;
 }
 
 footer #contact {
@@ -232,8 +227,9 @@ div#contact #address {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 55px 40px;
-    width: 570px;
+    padding: 55px 35px;
+    width: 580px;
+
 }
 
 div#address > #street {
@@ -249,16 +245,16 @@ div#address span {
 div#address > #phone {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    max-width: 300px;
 }
 
 div#contact #social_media {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 567px;
-    padding: 0px 40px;
+    width: 577px;
+    padding: 0px 35px;
     border-left: 3px solid white;
 }
 
@@ -267,18 +263,18 @@ div#social_media #social {
     flex-direction: column;
     justify-content: space-evenly;
     height: 252px;
-    /* margin-right: 211px; */
 }
 
 div#social_media div a {
     display: flex;
     align-items: center;
     color: white;
+    max-width: 1800px;
 }
 
 div#social_media a img {
     width: 35px;
-    margin: 0px 20px;
+    margin: 0px 20px 0px 0px;
 }
 
 div#social_media div > img {
@@ -289,6 +285,7 @@ div#social_media div > img {
 footer #copy {
     text-align: center;
     padding: 10px 0px;
+    margin: 0px 15px;
     border-top: 2px solid white;
 }
 /* footer */

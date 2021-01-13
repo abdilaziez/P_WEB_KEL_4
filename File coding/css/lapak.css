@@ -28,14 +28,13 @@ a {
 nav {
     background-color: white;
     position: sticky;
-    width: 100%;
     left: 0px;
     top: 0px;
 }
 
 nav > div.container {
     display: flex;
-    padding: 10px;
+    padding: 10px 40px 10px 10px;
     justify-content: space-between;
 }
 

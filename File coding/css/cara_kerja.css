@@ -16,12 +16,6 @@ a {
     margin-right: auto;
 }
 
-.container2 {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* navigasi menu */
 
 #this_menu {
@@ -37,7 +31,7 @@ nav {
 
 nav > div.container {
     display: flex;
-    padding: 10px 100px;
+    padding: 10px 40px 10px 10px;
     justify-content: space-between;
 }
 
@@ -46,6 +40,7 @@ nav div.menu {
     width: 500px;
     justify-content: space-between;
     align-items: center;
+    padding-left: 30px;
 }
 
 nav a {
@@ -118,24 +113,30 @@ footer {
     color: white;
 }
 
+footer .container{
+    display: flex;
+    flex-direction: column;
+}
+
 footer #contact {
     display: flex;
     justify-content: space-between;
     padding: 30px 0px;
-    height: 250px;
-    border-bottom: 1px solid white;
+    /* flex-wrap: wrap; */
+    /* height: 250px; */
 }
 
 div#contact #address {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    padding-left: 40px;
+    padding: 55px 35px;
+    width: 580px;
+
 }
 
 div#address > #street {
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 30px;
 }
 
@@ -147,15 +148,16 @@ div#address span {
 div#address > #phone {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    max-width: 300px;
 }
 
 div#contact #social_media {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 50%;
-    padding: 0px 40px;
+    flex-wrap: wrap;
+    width: 577px;
+    padding: 0px 35px;
     border-left: 3px solid white;
 }
 
@@ -163,27 +165,30 @@ div#social_media #social {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    height: 252px;
 }
 
 div#social_media div a {
     display: flex;
     align-items: center;
     color: white;
+    max-width: 1800px;
 }
 
 div#social_media a img {
     width: 35px;
-    margin-right: 20px;
+    margin: 0px 20px 0px 0px;
 }
 
 div#social_media div > img {
     width: 150px;
+    margin-left: 20px;
 }
 
 footer #copy {
     text-align: center;
     padding: 10px 0px;
-    border-top: 1px solid white;
+    margin: 0px 15px;
+    border-top: 2px solid white;
 }
 /* footer */
