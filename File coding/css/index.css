@@ -21,6 +21,12 @@ a {
     margin-right: auto;
 }
 
+.container2 {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* navigasi menu */
 
 #this_menu {
@@ -30,14 +36,13 @@ a {
 nav {
     background-color: white;
     position: sticky;
-    width: 100%;
     left: 0px;
     top: 0px;
 }
 
 nav > div.container {
     display: flex;
-    padding: 10px;
+    padding: 10px 100px;
     justify-content: space-between;
 }
 
@@ -46,7 +51,6 @@ nav div.menu {
     width: 500px;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
 }
 
 nav a {
@@ -80,17 +84,17 @@ div.header {
     background: linear-gradient(to right, #1ce11c 40%, #00000000), url(../image/beranda.png) right;
 }
 
-div.header > div.container {
+div.header > div.container2 {
     background-color: #1ce11c00;
     color: white;
-    padding: 40px 0px;
+    padding: 40px 70px;
 }
 
 div.header div#text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 800px;
+    max-width: 800px;
 }
 
 div.header div#title {
@@ -126,20 +130,21 @@ div#konten1 {
     background-color: whitesmoke;
 }
  
-div#konten1 > div.container {
+div#konten1 > div.container2 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 70px 0px;
+    /* flex-wrap: wrap; */
+    padding: 70px 100px;
 }
 
 div#konten1 img {
-    width: 600px;
+    width: 100%;
 }
 
 div#konten1 .teks {
-    width: 500px;
-    padding: 10px 0px;
+    padding: 10px 0px 10px 100px;
+    max-width: 540px;
 }
 
 div#konten1 #title1 {
@@ -152,29 +157,32 @@ div#konten1 #title1 {
 /* konten 1*/
 
 /* konten 2*/
-div#konten2 > div.container {
+div#konten2 > div.container2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 0px;
+    padding: 70px 100px;
 }
 
 div#konten2 #title2 {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 div#konten2 #how_to {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    flex-wrap: wrap;
+    max-width: 1200px;
 }
 
 div#how_to > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px 25px;
 }
 
 div#konten2 .number {
@@ -206,24 +214,30 @@ footer {
     color: white;
 }
 
+footer .container2{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 70px;
+}
+
 footer #contact {
     display: flex;
     justify-content: space-between;
     padding: 30px 0px;
-    height: 250px;
-    border-bottom: 1px solid white;
+    /* flex-wrap: wrap; */
+    /* height: 250px; */
 }
 
 div#contact #address {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    padding-left: 40px;
+    padding: 55px 40px;
+    width: 570px;
 }
 
 div#address > #street {
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 30px;
 }
 
@@ -242,7 +256,8 @@ div#contact #social_media {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    flex-wrap: wrap;
+    width: 567px;
     padding: 0px 40px;
     border-left: 3px solid white;
 }
@@ -251,7 +266,8 @@ div#social_media #social {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    height: 252px;
+    /* margin-right: 211px; */
 }
 
 div#social_media div a {
@@ -262,16 +278,17 @@ div#social_media div a {
 
 div#social_media a img {
     width: 35px;
-    margin-right: 20px;
+    margin: 0px 20px;
 }
 
 div#social_media div > img {
     width: 150px;
+    margin-left: 20px;
 }
 
 footer #copy {
     text-align: center;
     padding: 10px 0px;
-    border-top: 1px solid white;
+    border-top: 2px solid white;
 }
 /* footer */
