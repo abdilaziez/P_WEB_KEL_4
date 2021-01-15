@@ -11,6 +11,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .container{
@@ -71,36 +72,39 @@ nav a:hover {
 
 /* navigasi menu */
 
-
-a.button{
-    text-decoration: none;
-    color: black;
-    border:1px solid greenyellow;
-    padding: 10px 10px;
-    border-radius: 7px;
-    background-color: greenyellow;
+/* header */
+#submenu {
+    position: sticky;
+    left: 0px;
+    top: 89px;
+    padding: 3px;
+    background-color: silver;
 }
 
+/* konten */
+
 .foto{
-    margin: 10px;
+    margin: 25px 10px;
+    cursor: pointer;
 }
 
 .total{
     width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     margin-left: auto;
     margin-right: auto;
 }
 
 a.beli{
-    text-decoration: none;
-    border: 2px solid greenyellow;
-    padding: 5px 80px;
-    background-color: greenyellow;
+    padding: 5px 87px 5px 86px;
+    background-color: #1CE11C;
     color: white;
     border-radius: 7px;
-    font-weight: 900;
+}
+
+.beli:hover {
+    background-color: #04C105;
 }
 
 .notice{

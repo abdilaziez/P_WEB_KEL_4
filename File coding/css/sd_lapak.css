@@ -11,6 +11,7 @@ body{
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .container{
@@ -79,26 +80,61 @@ nav a:hover {
 
 /* navigasi menu */
 
+/* header */
+#submenu {
+    position: sticky;
+    left: 0px;
+    top: 89px;
+    padding: 8px 20px;
+    background-color: #1CE11C;
+}
+
+div.header {
+    display: flex;
+}
+
+div.header > a {
+    border: 2px solid #029D03;
+    padding: 1px 30px;
+    margin: 8px 10px;
+    color: white;
+    border-radius: 25px;
+}
+
+div.header > a:hover {
+    background-color: #029D03;
+}
+
+#this_sub {
+    background-color: #029D03;
+}
+
+/* header */
+
+/* konten */
+
 .foto{
-    margin: 10px;
+    margin: 25px 10px;
+    cursor: pointer;
 }
 
 .total{
     width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     margin-left: auto;
     margin-right: auto;
 }
 
 a.beli{
-    text-decoration: none;
-    border: 2px solid greenyellow;
-    padding: 5px 80px;
-    background-color: greenyellow;
+    padding: 5px 87px 5px 86px;
+    background-color: #1CE11C;
     color: white;
     border-radius: 7px;
-    font-weight: 900;
+}
+
+.beli:hover {
+    background-color: #04C105;
 }
 
 /* responsive */
@@ -175,4 +211,5 @@ a.beli{
     }
 
 /* sidebar */
+
 }

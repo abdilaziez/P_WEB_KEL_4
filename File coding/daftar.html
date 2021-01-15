@@ -41,40 +41,68 @@
             <div class="kotak2">
                 <div class="atas">
                     <a style="text-decoration: none;" href="#"><h3 style="color: #1CE11C;">DAFTAR</h3></a>
-                    <a style="text-decoration: none;" href="#"><h3>MASUK</h3></a>
+                    <a id="tab_masuk" style="text-decoration: none;" href="#"><h3>MASUK</h3></a>
                 </div>
-                <div class="daftar">
-                    <form action="">
-                        <input type="text" placeholder="Email">
-                    </form>
-                    <form action="">
-                        <input type="text" placeholder="Password">
-                    </form>
-                    <form action="">
-                        <input type="text" placeholder="Retype Password">
-                    </form>
-                </div>
-                <a class="tombol" href="#">DAFTAR</a>
+                <form class="daftar" name="daftar" action="">
+                    <div>
+                        <input name="email" type="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <input name="password" type="password" placeholder="Password">
+                    </div>
+                    <div>
+                        <input name="re_password" type="password" placeholder="Retype Password">
+                    </div>
+                </form>
+                <a id="daftar_btn" href="#">DAFTAR</a>
             </div>
         </div>
 <!-- MASUK -->
         <div class="kotak-login hide">
             <div class="kotak2">
                 <div class="atas">
-                    <a style="text-decoration: none;" href="#"><h3>DAFTAR</h3></a>
+                    <a id="tab_daftar" style="text-decoration: none;" href="#"><h3>DAFTAR</h3></a>
                     <a style="text-decoration: none;" href="#"><h3 style="color: #1CE11C;">MASUK</h3></a>
                 </div>
-                <div class="daftar">
-                    <form action="">
-                        <input type="text" placeholder="Email">
-                    </form>
-                    <form action="">
-                        <input type="text" placeholder="Password">
-                    </form>
-                </div>
-                <a class="tombol" href="sd_index.html">MASUK</a>
+                <form class="daftar" name="login" action="">
+                    <div>
+                        <input name="email" type="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <input name="password" type="password" placeholder="Password" >
+                    </div>
+                </form>
+                <a id="login_btn" href="#">MASUK</a>
             </div>
         </div>
     </div>
-</body> 
+
+<!-- modal -->
+<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <button id='ok-modal'> OK </button>
+        </div>
+    </div>
+</div>
+</body>
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="javascript/akun.js"></script>
+<script>
+    let tabMasuk = document.querySelector("#tab_masuk");
+    let tabDaftar = document.querySelector("#tab_daftar");
+
+        $(tabMasuk).click(function() {
+            $(".kotak-login.hide").removeClass('hide');
+            $(".kotak-daftar").addClass('hide');
+        });
+
+        $(tabDaftar).click(function() {
+            $(".kotak-daftar.hide").removeClass('hide');
+            $(".kotak-login").addClass('hide');
+        });
+</script>
 </html>

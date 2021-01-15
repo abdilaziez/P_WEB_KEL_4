@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
-* {
+*{
     font-family: "Open Sans", sans-serif;
+}
+
+body{
     margin: 0;
     padding: 0;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
-.container {
+.container{
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
@@ -76,96 +80,123 @@ nav a:hover {
 
 /* navigasi menu */
 
+/* header */
+#submenu {
+    position: sticky;
+    left: 0px;
+    top: 89px;
+    padding: 8px 20px;
+    background-color: #1CE11C;
+}
+
+div.header {
+    display: flex;
+}
+
+div.header > a {
+    border: 2px solid #029D03;
+    padding: 1px 30px;
+    margin: 8px 10px;
+    color: white;
+    border-radius: 25px;
+}
+
+div.header > a:hover {
+    background-color: #029D03;
+}
+
+#this_sub {
+    background-color: #029D03;
+}
+
+/* header */
+
 /* konten */
 
-div#header {
-    background-color: #1CE11C;
-    padding: 0px 25px;
+div.box {
+    max-width: 1100px;
+    margin: 0px auto;
+    background-color: lightgray;
 }
 
-div#header > div.container {
-    font-size: 40px;
-    font-weight: 600;
-}
-
-body > div.container {
+div.content {
     display: flex;
     flex-direction: column;
-    height: 600px;
-    margin-top: 20px;
+    padding: 40px 50px 0px 50px;
+    height: 100%;
+    background-color: white;
 }
 
-#buy {
-    margin: 20px 25px;
-}
-
-#sell {
-    margin: 20px 25px;
-}
-
-div.status_header {
-    background-color: #029D03;
-    color: white;
-    font-size: 25px;
-    padding: 1px 10px;
-}
-
-div.status_beli, div.status_jual {
+.top {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-button {
+div.foto {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+div.foto > img {
+    width: 100%;
+}
+
+div.title {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    padding: 10px;
+    justify-content: center;
+    width: 50%;
+    padding: 30px;
     font-size: 20px;
-    align-items: center;
-    color: black;
-    outline: none;
+}
+
+#nama {
+    font-size: 35px;
+    padding: 10px 0px;
+    border-bottom: 1px solid silver;
+}
+
+#harga {
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+div.desc {
+    font-size: 25px;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding: 5px 0px;
+}
+
+div.isi {
+    padding: 10px 0px;
+}
+
+div.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    border-top: 1px solid silver;
+}
+div.footer > button {
     border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    padding: 15px 0px;
+    width: 100%;
     cursor: pointer;
     background-color: #1CE11C;
 }
 
-div.status_beli button:focus {
+div.footer > button:hover {
     background-color: #04C105;
 }
 
-div.status_jual button:focus {
-    background-color: #04C105;
-}
-
-button:hover {
-    background-color: #04C105;
-}
-
-div > .img1 {
-    width: 40px;
-}
-div > .img2 {
-    width: 43px;
-}
-div > .img3 {
-    width: 63px;
-}
-div > .img4 {
-    width: 63px;
-}
-
-div.pesanan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    padding: 20px;
-    background-color: whitesmoke;
-}
 /* konten */
 
 /* responsive */
-
 .mobile-menu{
     display: none;
 }
@@ -180,7 +211,7 @@ div.pesanan {
     bottom: 0;
     left: -300px;
     width: 250px;
-    height: 350px;
+    height: 366px;
     background-color: white;
     transition: 0.4s;
     display: none;
@@ -214,9 +245,7 @@ div.pesanan {
 /* responsive */
 
 @media screen and (max-width: 768px ){
-
 /* sidebar */
-
     .mobile-menu{
         display: flex;
         align-items: center;
@@ -232,42 +261,14 @@ div.pesanan {
         cursor: pointer;
     }
 
+    #daftar_button_sb {
+        background-color: #1CE11C;
+    }
+
     .sidebars{
         display: block;
     }
 
 /* sidebar */
-
-}
-
-@media screen and (max-width: 580px){
-    div#header > div.container {
-        font-size: 30px;
-    }
-
-    div.status_header {
-        font-size: 20px;
-    }
-
-    button {
-        font-size: 10px;
-    }
-
-    div > .img1 {
-        width: 30px;
-    }
-    div > .img2 {
-        width: 33px;
-    }
-    div > .img3 {
-        width: 53px;
-    }
-    div > .img4 {
-        width: 53px;
-    }
-
-    div.pesanan {
-        font-size: 20px;
-    }
 
 }

@@ -131,7 +131,7 @@ input{
     width: 260px;
 }
 
-.tombol{
+#daftar_btn{
     text-decoration: none;
     color: white;
     padding: 10px 30px;
@@ -140,7 +140,7 @@ input{
     font-weight: bold;
 }
 
-.tombol:hover {
+#daftar_btn:hover {
     box-shadow: 0px 0px 10px #1CE11C;
 }
 
@@ -156,10 +156,77 @@ input{
     border-radius: 10px;
 }
 
+#login_btn{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #1CE11C;
+    font-weight: bold;
+}
+
+#login_btn:hover {
+    box-shadow: 0px 0px 10px #1CE11C;
+}
+
 .hide {
     display: none;
 }
 /* masuk */
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 0px 20px;
+}
+
+.modal-content {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-header {
+    font-size: 20px;
+    /* text-align: center; */
+    padding: 30px;
+}
+
+.modal-content > button {
+    padding: 10px 30px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1CE11C;
+}
+
+.modal-content > button:hover {
+    background-color: #04C105;
+}
+/* modal */
 
 /* responsive */
 
