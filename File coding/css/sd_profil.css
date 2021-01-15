@@ -22,21 +22,20 @@ a {
     color: #1CE11C;
 }
 
-nav.navbar {
+nav {
     background-color: white;
     position: sticky;
-    width: 100%;
     left: 0px;
     top: 0px;
 }
 
-nav.navbar > div.container {
+nav > div.container {
     display: flex;
-    padding: 10px;
+    padding: 10px 40px 10px 10px;
     justify-content: space-between;
 }
 
-nav.navbar div.menu {
+nav div.menu {
     display: flex;
     width: 500px;
     justify-content: space-between;
@@ -44,12 +43,20 @@ nav.navbar div.menu {
     padding-left: 30px;
 }
 
-nav.navbar a {
+nav a {
     color: black;
 }
 
-nav.navbar a:hover {
+nav a:hover {
     color: #1CE11C;
+}
+
+#profil {
+    filter: brightness(0);
+}
+
+#profil:hover {
+    filter: none;
 }
 
 /* navigasi menu */
@@ -65,8 +72,13 @@ section.container {
     margin-bottom: 20px;
 }
 
+form {
+    padding: 0px 25px;
+}
+
 div.main {
     display: flex;
+    justify-content: space-between;
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
@@ -157,3 +169,84 @@ div.main >div#answer div.overflow {
     text-overflow: ellipsis;
 }
 /* konten */
+
+/* responsive */
+
+.mobile-menu{
+    display: none;
+}
+
+#check {
+    display: none ;
+}
+
+.sidebars{
+    position: fixed;
+    top: 85px;
+    bottom: 0;
+    left: -300px;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    transition: 0.4s;
+    display: none;
+}
+
+.sidebars ul li a{
+    color:black;
+}
+
+.sidebars ul li:not(:last-child) {
+    padding: 24px;
+}
+
+.sidebars ul li:last-child {
+    padding: 15px 24px;
+}
+
+.sidebars ul li:hover {
+    background-color: #54FC54 ;
+    transition: 0.5s;
+}
+
+#check:checked ~ .sidebars{
+    left: 0px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px ){
+
+/* sidebar */
+
+    .mobile-menu{
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    .container .menu{
+        display: none;
+    }
+
+    .mobile-menu:hover {
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
+    .sidebars{
+        display: block;
+    }
+
+/* sidebar */
+}
+
+@media screen and (max-width: 580px) {
+    div.main {
+        padding: 20px;
+    }
+
+    #answer div {
+        max-width: 185px;
+    }
+}

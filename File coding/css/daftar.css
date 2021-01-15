@@ -51,7 +51,7 @@ nav a:hover {
     color: #1CE11C;
 }
 
-nav a#daftar_button {
+#daftar_button {
     background-color: #1CE11C;
     color: white;
     text-align: center;
@@ -60,7 +60,7 @@ nav a#daftar_button {
     border-radius: 50px;
 }
 
-nav a#daftar_button:hover {
+#daftar_button:hover {
     background-color: transparent;
     color: #1CE11C;
     box-shadow: 0px 0px 0px 2px #1CE11C;
@@ -69,7 +69,7 @@ nav a#daftar_button:hover {
 /* navigasi menu */
 
 .gambar img{
-    width: 10%;
+    width: 120px;
     margin-top: 4%;
 }
 
@@ -146,7 +146,6 @@ input{
 
 /* MASUK */
 
-
 .kotak-login{
     border: 2px solid rgba(0, 0, 0, 0.493);
     width: 430px;
@@ -159,4 +158,82 @@ input{
 
 .hide {
     display: none;
+}
+/* masuk */
+
+/* responsive */
+
+.mobile-menu{
+    display: none;
+}
+
+#check {
+    display: none ;
+}
+
+.sidebars{
+    position: fixed;
+    top: 85px;
+    bottom: 0;
+    left: -300px;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    transition: 0.4s;
+    display: none;
+}
+
+.sidebars ul li a{
+    color:black;
+}
+
+.sidebars ul li {
+    padding: 24px;
+}
+
+.sidebars ul li:hover {
+    background-color: #54FC54 ;
+    transition: 0.5s;
+}
+
+#check:checked ~ .sidebars{
+    left: 0px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px ){
+/* sidebar */
+    .mobile-menu{
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    .container .menu{
+        display: none;
+    }
+
+    .mobile-menu:hover {
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
+    #daftar_button_sb {
+        background-color: #1CE11C;
+    }
+
+    .sidebars{
+        display: block;
+    }
+    
+/* sidebar */
+
+    .kotak-daftar {
+        width: 400px;
+    }
+
+    .kotak-login {
+        width: 380px;
+    }
 }

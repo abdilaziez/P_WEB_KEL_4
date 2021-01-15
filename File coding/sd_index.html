@@ -7,9 +7,22 @@
     <link rel="stylesheet" type="text/css" href="css/sd_index.css">
 </head>
 <body>
+    <input type="checkbox" id="check">
+    <div class="sidebars">
+        <ul>
+            <li><a id="this_menu" href="sd_index.html">Beranda</a></li>
+            <li><a href="sd_mulai_menanam.html">Mulai Menanam</a></li>
+            <li><a href="sd_lapak.html">Lapak</a></li>
+            <li><a href="sd_status_pemesanan.html">Status</a></li>
+            <li>
+                <a href="sd_profil.html"> <img src="image/ikon/profil_ikon.png" width="35px" alt="Menu Profil"> </a>
+            </li>
+        </ul>
+    </div>
     <!-- navigasi menu -->
-    <nav class="navbar">
+    <nav>
         <div class="container">
+            <label href="" for="check" class="mobile-menu"> <img src="image/ikon/menu.png" width="30px"> </label>
             <div class="menu">
                 <a id="this_menu" href="sd_index.html">Beranda</a>
                 <a href="sd_mulai_menanam.html">Mulai Menanam</a>
@@ -17,78 +30,76 @@
                 <a href="sd_status_pemesanan.html">Status</a>
                 <a href="sd_profil.html"> <img id="profil" src="image/ikon/profil_ikon.png" width="35px" alt="Menu Profil"> </a>
             </div>
-            <div>
-                <a href="sd_index.html"> <img src="image/logo_web.png" width="120px" alt="Logo"> </a>
-            </div>
+            <a class="logo" href="sd_index.html"> <img src="image/logo_web.png" width="120px" alt="Logo"> </a>
         </div>
     </nav>
     <!-- navigasi menu -->
 
-    <!-- header -->
-    <div class="header">
-        <div class="container">
-            <div id="text">
-                <div id="title">
-                    Dapatkan rekomendasi penanaman dengan hanya <span>sekali klik</span>
-                </div>
-                <div class="content">
-                    Tanpa perlu bingung menghitung berapa jarak penanaman di lahan Anda.
-                    <br>
-                    Dengan menekan tombol "Mulai Menanam" di bawah, Anda akan mendapat hasil analisa yang Anda perlukan, 
-                    seperti jarak penanaman tiap tumbuhan sampai pupuk apa yang direkomendasikan.
-                    <br>
-                    Anda juga tidak perlu khawatir jika pupuk yang direkomendasikan tidak ada di tempat Anda, 
-                    karena di situs ini juga menyediakan tempat bagi pelapak untuk menjual produk pertaniannya.
-                    <br>
-                    Tunggu apa lagi, ayo daftar sekarang juga!
-                </div>
-                <div>
-                    <a id="mulai_menanam" href="sd_mulai_menanam.html">Mulai Menanam</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- header -->
-
-    <!-- konten 1 -->
-    <div id="konten1">
-        <div class="container">
-            <div> <img src="image/kenalan.png"> </div>
-            <div class="teks">
-                <div id="title1">Apa sih situs Tani Maju itu?</div>
-                <div class="content">
-                    Situs Tani Maju adalah sebuah platform untuk memudahkan para petani dan juga pelapak pertanian. 
-                    Situs ini membantu petani mendapatkan rekomendasi mengenai penanaman dengan mudah. 
-                    Situs ini juga membantu para pelapak maupun petani melakukan transaksi jual beli peralatan maupun pupuk pertanian dengan mudah.
+        <!-- header -->
+        <div class="header">
+            <div class="container">
+                <div id="text">
+                    <div id="title">
+                        Dapatkan rekomendasi penanaman dengan hanya <span>sekali klik</span>
+                    </div>
+                    <div class="content">
+                        Tanpa perlu bingung menghitung berapa jarak penanaman di lahan Anda.
+                        <br>
+                        Dengan menekan tombol "Mulai Menanam" di bawah, Anda akan mendapat hasil analisa yang Anda perlukan, 
+                        seperti jarak penanaman tiap tumbuhan sampai pupuk apa yang direkomendasikan.
+                        <br>
+                        Anda juga tidak perlu khawatir jika pupuk yang direkomendasikan tidak ada di tempat Anda, 
+                        karena di situs ini juga menyediakan tempat bagi pelapak untuk menjual produk pertaniannya.
+                        <br>
+                        Tunggu apa lagi, ayo daftar sekarang juga!
+                    </div>
+                    <div>
+                        <a id="mulai_menanam" href="sd_mulai_menanam.html">Mulai Menanam</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+        <!-- header -->
+    
+        <!-- konten 1 -->
+        <div id="konten1">
+            <div class="container">
+                <img class="kenalan" src=image/kenalan.png>
+                <div class="teks">
+                    <div id="title1">Apa sih situs Tani Maju itu?</div>
+                    <div class="content">
+                        Situs Tani Maju adalah sebuah platform untuk memudahkan para petani dan juga pelapak pertanian. 
+                        Situs ini membantu petani mendapatkan rekomendasi mengenai penanaman dengan mudah. 
+                        Situs ini juga membantu para pelapak maupun petani melakukan transaksi jual beli peralatan maupun pupuk pertanian dengan mudah.
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     <!-- konten 2-->
-    <div id="konten2">
-        <div class="container">
-            <div id="title2">Langkah Menganalisa Lahan</div>
-            <div id="how_to">
-                <div>
-                    <div class="number">1</div>
-                    <div class="content">Buka menu Mulai Menanam.</div>
-                </div>
-                <div>
-                    <div class="number">2</div>
-                    <div class="content">Klik tombol "Mulai Menanam".</div>
-                </div>
-                <div>
-                    <div class="number">3</div>
-                    <div class="content">Masukkan luas lahan dan tanaman yang ingin digunakan.</div>
-                </div>
-                <div>
-                    <div class="number">4</div>
-                    <div class="content">Klik tombol "Analisa", dan Voila! Hasil analisa akan keluar di layar Anda.</div>
+        <div id="konten2">
+            <div class="container">
+                <div id="title2">Langkah Menganalisa Lahan</div>
+                <div id="how_to">
+                    <div>
+                        <div class="number">1</div>
+                        <div class="content">Buka menu Mulai Menanam.</div>
+                    </div>
+                    <div>
+                        <div class="number">2</div>
+                        <div class="content">Klik tombol "Mulai Menanam".</div>
+                    </div>
+                    <div>
+                        <div class="number">3</div>
+                        <div class="content">Masukkan luas lahan dan tanaman yang ingin digunakan.</div>
+                    </div>
+                    <div>
+                        <div class="number">4</div>
+                        <div class="content">Klik tombol "Analisa", dan Voila! Hasil analisa akan keluar di layar Anda.</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- footer -->
     <footer>

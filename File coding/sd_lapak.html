@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="css/sd_lapak.css">
 </head>
 <body>
+    <input type="checkbox" id="check">
+    <div class="sidebars">
+        <ul style="padding: 0px;">
+            <li><a href="sd_index.html">Beranda</a></li>
+            <li><a href="sd_mulai_menanam.html">Mulai Menanam</a></li>
+            <li><a id="this_menu" href="sd_lapak.html">Lapak</a></li>
+            <li><a href="sd_status_pemesanan.html">Status</a></li>
+            <li>
+                <a href="sd_profil.html"> <img src="image/ikon/profil_ikon.png" width="35px" alt="Menu Profil"> </a>
+            </li>
+        </ul>
+    </div>
     <!-- navigasi menu -->
-    <nav class="navbar">
+    <nav>
         <div class="container">
+            <label href="" for="check" class="mobile-menu"> <img src="image/ikon/menu.png" width="30px"> </label>
             <div class="menu">
                 <a href="sd_index.html">Beranda</a>
                 <a href="sd_mulai_menanam.html">Mulai Menanam</a>
@@ -17,9 +30,7 @@
                 <a href="sd_status_pemesanan.html">Status</a>
                 <a href="sd_profil.html"> <img id="profil" src="image/ikon/profil_ikon.png" width="35px" alt="Menu Profil"> </a>
             </div>
-            <div>
-                <a href="sd_index.html"> <img src="image/logo_web.png" width="120px" alt="Logo"> </a>
-            </div>
+            <a class="logo" href="sd_index.html"> <img src="image/logo_web.png" width="120px" alt="Logo"> </a>
         </div>
     </nav>
     <!-- navigasi menu -->

@@ -22,21 +22,20 @@ a {
     color: #1CE11C;
 }
 
-nav.navbar {
+nav {
     background-color: white;
     position: sticky;
-    width: 100%;
     left: 0px;
     top: 0px;
 }
 
-nav.navbar > div.container {
+nav > div.container {
     display: flex;
-    padding: 10px;
+    padding: 10px 40px 10px 10px;
     justify-content: space-between;
 }
 
-nav.navbar div.menu {
+nav div.menu {
     display: flex;
     width: 500px;
     justify-content: space-between;
@@ -44,20 +43,35 @@ nav.navbar div.menu {
     padding-left: 30px;
 }
 
-nav.navbar a {
+nav a {
     color: black;
 }
 
-nav.navbar a:hover {
+nav a:hover {
     color: #1CE11C;
 }
 
-nav.navbar #profil {
+#profil {
     filter: brightness(0);
 }
 
-nav.navbar #profil:hover {
+#profil:hover {
     filter: none;
+}
+
+.daftar_button {
+    background-color: #1CE11C;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.daftar_button:hover {
+    background-color: transparent;
+    color: #1CE11C;
+    box-shadow: 0px 0px 0px 2px #1CE11C;
 }
 
 /* navigasi menu */
@@ -66,6 +80,7 @@ nav.navbar #profil:hover {
 
 div#header {
     background-color: #1CE11C;
+    padding: 0px 25px;
 }
 
 div#header > div.container {
@@ -79,6 +94,14 @@ body > div.container {
     justify-content: space-between;
     height: 600px;
     margin-top: 20px;
+}
+
+#buy {
+    margin: 20px 25px;
+}
+
+#sell {
+    margin: 20px 25px;
 }
 
 div.status_header {
@@ -141,3 +164,79 @@ div.pesanan {
     background-color: whitesmoke;
 }
 /* konten */
+
+/* responsive */
+
+.mobile-menu{
+    display: none;
+}
+
+#check {
+    display: none ;
+}
+
+.sidebars{
+    position: fixed;
+    top: 85px;
+    bottom: 0;
+    left: -300px;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    transition: 0.4s;
+    display: none;
+}
+
+.sidebars ul li a{
+    color:black;
+}
+
+.sidebars ul li:not(:last-child) {
+    padding: 24px;
+}
+
+.sidebars ul li:last-child {
+    padding: 15px 24px;
+}
+
+.sidebars ul li:hover {
+    background-color: #54FC54 ;
+    transition: 0.5s;
+}
+
+.sidebars img {
+    filter: brightness(0);
+}
+
+#check:checked ~ .sidebars{
+    left: 0px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px ){
+
+/* sidebar */
+
+    .mobile-menu{
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    .container .menu{
+        display: none;
+    }
+
+    .mobile-menu:hover {
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
+    .sidebars{
+        display: block;
+    }
+
+/* sidebar */
+
+}

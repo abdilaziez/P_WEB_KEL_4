@@ -13,6 +13,7 @@ a {
 .content {
     font-weight: 500;
     font-size: 18px;
+    text-align: justify;
 }
 
 .container {
@@ -56,7 +57,7 @@ nav a:hover {
     color: #1CE11C;
 }
 
-nav a#daftar_button {
+#daftar_button {
     background-color: #1CE11C;
     color: white;
     text-align: center;
@@ -65,7 +66,7 @@ nav a#daftar_button {
     border-radius: 50px;
 }
 
-nav a#daftar_button:hover {
+#daftar_button:hover {
     background-color: transparent;
     color: #1CE11C;
     box-shadow: 0px 0px 0px 2px #1CE11C;
@@ -83,14 +84,16 @@ div.header {
 div.header > div.container {
     background-color: #1ce11c00;
     color: white;
-    padding: 40px 35px;
+    padding: 40px 0px;
+    width: 70%;
+    margin-left: 5%;
 }
 
 div.header div#text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 800px;
+    width: 800px;
 }
 
 div.header div#title {
@@ -128,19 +131,18 @@ div#konten1 {
  
 div#konten1 > div.container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    /* flex-wrap: wrap; */
-    padding: 70px 35px;
+    padding: 70px 20px;
 }
 
 div#konten1 img {
-    width: 650px;
+    width: 50%;
 }
 
 div#konten1 .teks {
-    padding: 10px 0px 10px 100px;
-    max-width: 540px;
+    width: fit-content;
+    padding: 10px 30px;
 }
 
 div#konten1 #title1 {
@@ -157,28 +159,26 @@ div#konten2 > div.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 15px;
+    padding: 70px 0px;
 }
 
 div#konten2 #title2 {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 40px;
-    text-align: center;
 }
 
 div#konten2 #how_to {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
+    width: 100%;
 }
 
 div#how_to > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 20px;
+    width: 100%;
 }
 
 div#konten2 .number {
@@ -198,7 +198,7 @@ div#konten2 .number {
 
 div#konten2 div.content {
     text-align: center;
-    max-width: 250px;
+    width: 250px;
 }
 
 /* konten 2*/
@@ -210,30 +210,24 @@ footer {
     color: white;
 }
 
-footer .container{
-    display: flex;
-    flex-direction: column;
-}
-
 footer #contact {
     display: flex;
     justify-content: space-between;
     padding: 30px 0px;
-    /* flex-wrap: wrap; */
-    /* height: 250px; */
+    height: 250px;
+    border-bottom: 1px solid white;
 }
 
 div#contact #address {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 55px 35px;
-    width: 580px;
-
+    width: 50%;
+    padding-left: 40px;
 }
 
 div#address > #street {
-    max-width: 300px;
+    width: 300px;
     margin-bottom: 30px;
 }
 
@@ -245,16 +239,15 @@ div#address span {
 div#address > #phone {
     display: flex;
     justify-content: space-between;
-    max-width: 300px;
+    width: 300px;
 }
 
 div#contact #social_media {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    width: 577px;
-    padding: 0px 35px;
+    width: 50%;
+    padding: 0px 40px;
     border-left: 3px solid white;
 }
 
@@ -262,30 +255,166 @@ div#social_media #social {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 252px;
+    height: 100%;
 }
 
 div#social_media div a {
     display: flex;
     align-items: center;
     color: white;
-    max-width: 1800px;
 }
 
 div#social_media a img {
     width: 35px;
-    margin: 0px 20px 0px 0px;
+    margin-right: 20px;
 }
 
 div#social_media div > img {
     width: 150px;
-    margin-left: 20px;
 }
 
 footer #copy {
     text-align: center;
     padding: 10px 0px;
-    margin: 0px 15px;
-    border-top: 2px solid white;
+    border-top: 1px solid white;
 }
+
 /* footer */
+
+.mobile-menu{
+    display: none;
+}
+
+#check {
+    display: none ;
+}
+
+.sidebars{
+    position: fixed;
+    top: 85px;
+    bottom: 0;
+    left: -300px;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    transition: 0.4s;
+    display: none;
+}
+
+.sidebars ul li a{
+    color:black;
+}
+
+.sidebars ul li {
+    padding: 24px;
+}
+
+.sidebars ul li:hover {
+    background-color: #54FC54 ;
+    transition: 0.5s;
+}
+
+#check:checked ~ .sidebars{
+    left: 0px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 900px ){
+    #text #title {
+        width: 90vw;
+    }
+
+    #text .content{
+        width: 90vw;
+    }
+
+}
+
+@media screen and (max-width:1100px){
+    #konten1 .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #how_to{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #how_to .content{
+        margin-bottom: 10vh;
+    }
+
+}
+
+@media screen and (max-width:768px){
+/* sidebar */
+    .mobile-menu{
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    .container .menu{
+        display: none;
+    }
+
+    .mobile-menu:hover {
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
+    #daftar_button_sb {
+        background-color: #1CE11C;
+    }
+
+    .sidebars{
+        display: block;
+    }
+
+/* sidebar */
+
+    div#konten1 .container img{
+        width: 400px;
+    }
+
+    div#konten1 .teks{
+        width: 400px;
+    }
+
+    div#contact {
+        display: flex;
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    div#contact #social_media {
+        display: flex;
+        flex-direction: row;
+        border-left: none;
+        padding: none;
+        width: 80%;
+        border-bottom: none;
+    }
+
+    div#contact #social_media a{
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#phone{
+        margin-bottom: 2vh;
+    }
+
+    div#copy{
+        margin-top: 90px;
+        border-top: 1px solid;
+    }
+}
